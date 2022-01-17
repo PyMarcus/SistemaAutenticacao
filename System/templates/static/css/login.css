@@ -1,0 +1,1731 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*variáveis de cores do site*/
+:root{
+  --navBar-color:#2E9AFE;
+  --navBarText-color: #FFFFFF;
+
+  --sideBar-color: #76b1e9;
+  --sideBarText-color: #FFFFFF;
+
+  --background-color: #FFFFFF;
+  --mainText-color:#2E9AFE ;
+}
+
+
+/*smarthphones e afins*/
+@media (max-width: 768px){
+  html,body{
+    overflow-x: hidden;
+  }
+    /*nav bar*/
+    .navbar{
+        background-color: var(--navBar-color);
+        height: 13rem;
+        width: 100rem;
+    }
+    .img-nav{
+      float: left;
+      padding-top: 3rem;
+      width: 5rem;
+      margin:0px;
+
+    }
+    .texto-nav{
+      float:right;
+      padding-left: 1rem;
+      padding-top:4.5rem;
+      font-size: 2.2rem;
+      color: var(--navBarText-color);
+
+    }
+    .subtitulo-nav{
+      padding:0.5rem;
+      font-size: 1.5rem;
+      color: var(--navBarText-color);
+
+    }
+    .image-logo{
+      margin:0px;
+      display: inline-block;
+      padding-bottom: 0px;
+
+    }
+    /*fim navbar*/
+
+
+    /*conteudo1*/
+    .first-content{
+      background-color: var(--sideBar-color);
+      color: var(--navBarText-color);
+      display: flex;
+      justify-content: center;
+      padding-top: 5rem;
+    }
+    .simbol-name{
+        display: inline-block;
+    }
+    .img-simbol{
+      float: left;
+      width: 8rem;
+    }
+    .IMOBI{
+      float: right;
+      padding: 2rem;
+      font-size: 3rem;
+    }
+
+
+    .divisor{
+      border: none;
+      background-color: var(--sideBar-color);
+        padding-top: 0rem;
+        display: flex;
+        justify-content: center;
+       }
+       .divisor-son{
+         width: 20rem;
+       }
+
+    /*conteudo2*/
+    .second-content{
+      background-color: var(--sideBar-color);
+      color: var(--navBarText-color);
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .second-content-text{
+      font-size: 4rem;
+      text-align: center;
+    }
+    .formato{
+      font-size:2rem;
+      text-align: center;
+    }
+
+    /*botao logar*/
+    .login-button{
+      background-color: var(--sideBar-color);
+      padding-top: 5px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5rem;
+    }
+    .btn{
+      background-color: var(--navBarText-color);
+      border: none;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      border-radius: 10%;
+      color: var(--navBar-color);
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+
+    /*sessão formulário*/
+    .img-form{
+      width: 3rem;
+      margin-left: 0rem;
+    }
+    .form1{
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .form{
+      display: flex;
+      align-content: center;
+      gap: 1rem;
+      padding-bottom: 1.5rem;
+    }
+
+    input{
+      color: var(--navBar-color);
+      border: 0.2rem solid var(--navBar-color);
+      padding-left:10px;
+      font-size: 1.6rem;
+      border-radius: 3%;
+    }
+
+
+    .footer{
+      padding: 2rem;
+      background-color: var(--navBar-color);
+    }
+
+    .text-f{
+      font-size: 1.3rem;
+      color: var(--navBarText-color);
+    }
+    .linked{
+      text-decoration: none;
+      padding-left: 0rem;
+      background-color: white;
+      text-align: center;
+      color: #2E9AFE;
+
+    }
+    .btn2{
+      background-color: var(--navBarText-color);
+      border: 1;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      padding-left: 2.1rem;
+      padding-right: 2.1rem;
+      border-radius: 10%;
+      color: var(--navBar-color);
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .div{
+      display: flex;
+      align-items: center;
+      padding-left: 6rem;
+    }
+  }
+@media (min-width: 769px) and (max-width:835px){
+   /*nav bar*/
+
+   body{
+     overflow: hidden;
+   }
+   .navbar{
+    background-color: var(--navBar-color);
+    height: 100%;
+    width: 100%;
+}
+.img-nav{
+  float: left;
+  padding-top: 3rem;
+  width: 10rem;
+  margin:0px;
+
+}
+.texto-nav{
+  float:right;
+  padding-left: 1rem;
+  padding-top:4.5rem;
+  font-size: 6rem;
+  color: var(--navBarText-color);
+
+}
+.subtitulo-nav{
+  padding:0.5rem;
+  font-size: 2.3rem;
+  color: var(--navBarText-color);
+
+}
+.image-logo{
+  margin:0px;
+  display: inline-block;
+  padding-bottom: 0px;
+
+}
+/*fim navbar*/
+
+
+/*conteudo1*/
+.first-content{
+  background-color: var(--sideBar-color);
+  color: var(--navBarText-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+  width: 30rem;
+
+
+}
+.simbol-name{
+    display: inline-block;
+}
+.img-simbol{
+  float: left;
+  width: 8rem;
+}
+.IMOBI{
+  float: right;
+  padding: 2rem;
+  font-size: 3rem;
+
+}
+
+
+.divisor{
+  border: none;
+  background-color: var(--sideBar-color);
+    padding-top: 0rem;
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+
+}
+   .divisor-son{
+     width: 20rem;
+   }
+
+/*conteudo2*/
+.second-content{
+  width: 30rem;
+  background-color: var(--sideBar-color);
+  color: var(--navBarText-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+
+}
+.second-content-text{
+  font-size: 4rem;
+  text-align: center;
+}
+.formato{
+  font-size:2rem;
+  text-align: center;
+}
+
+/*botao logar*/
+.login-button{
+  background-color: var(--sideBar-color);
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  width: 30rem;
+
+}
+.btn{
+  background-color: var(--navBarText-color);
+  border: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 10%;
+  color: var(--navBar-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+
+/*sessão formulário*/
+.img-form{
+  width: 3rem;
+  height: 3.5rem;
+  margin-left: 0rem;
+}
+.form1{
+  width:52rem;
+  display: inline-block;
+  float: right;
+  position:relative;
+  padding-bottom: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -400px;
+  margin-right: 5px;
+
+}
+
+.form{
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+input{
+  color: var(--navBar-color);
+  border: 0.2rem solid var(--navBar-color);
+  padding-left:10px;
+  font-size: 1.6rem;
+  border-radius: 3%;
+  width: 40rem;
+  height: 4rem;
+}
+
+
+.footer{
+  padding: 2rem;
+  background-color: var(--navBar-color);
+}
+
+.text-f{
+  font-size: 1.3rem;
+  color: var(--navBarText-color);
+}
+.linked{
+  text-decoration: none;
+  padding-left: 0rem;
+  background-color: white;
+  text-align: center;
+  color: #2E9AFE;
+
+}
+.btn2{
+  background-color: var(--navBarText-color);
+  border: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem!important;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+  border-radius: 10%;
+  color: var(--navBar-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 10em;
+  margin-left:80px;
+  height: 5rem;
+}
+.div{
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+
+}
+.footer{
+  padding: 3rem;
+}
+}
+
+
+@media (min-width: 1700px) and (max-width:2000px){
+  /*nav bar*/
+
+  body{
+    overflow: hidden;
+  }
+  .navbar{
+   background-color: var(--navBar-color);
+   height: 100%;
+   width: 100%;
+}
+.img-nav{
+ float: left;
+ padding-top: 3rem;
+ width: 10rem;
+ margin:0px;
+
+}
+.texto-nav{
+ float:right;
+ padding-left: 1rem;
+ padding-top:4.5rem;
+ font-size: 6rem;
+ color: var(--navBarText-color);
+
+}
+.subtitulo-nav{
+ padding:0.5rem;
+ font-size: 2.3rem;
+ color: var(--navBarText-color);
+
+}
+.image-logo{
+ margin:0px;
+ display: inline-block;
+ padding-bottom: 0px;
+
+}
+/*fim navbar*/
+
+
+/*conteudo1*/
+.first-content{
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ width: 50rem;
+
+
+}
+.simbol-name{
+   display: inline-block;
+}
+.img-simbol{
+ float: left;
+ width: 10rem;
+}
+.IMOBI{
+ float: right;
+ padding: 2rem;
+ font-size: 5rem;
+
+}
+
+
+.divisor{
+ border: none;
+ background-color: var(--sideBar-color);
+   padding-top: 0rem;
+   display: flex;
+   justify-content: center;
+   width: 50rem;
+
+}
+  .divisor-son{
+    width: 20rem;
+  }
+
+/*conteudo2*/
+.second-content{
+ width: 50rem;
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+
+}
+.second-content-text{
+ font-size: 5rem;
+ text-align: center;
+}
+.formato{
+ font-size:3rem;
+ text-align: center;
+}
+
+/*botao logar*/
+.login-button{
+ background-color: var(--sideBar-color);
+ padding-top: 0px;
+ display: flex;
+ justify-content: center;
+ padding-bottom: 5rem;
+ width: 50rem;
+ padding-bottom: 3rem;
+
+}
+.btn{
+ background-color: var(--navBarText-color);
+ border: none;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ padding-left: 3rem;
+ padding-right: 3rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+
+
+/*sessão formulário*/
+.img-form{
+ width: 3.3rem;
+ height: 3.8rem;
+ margin-left: 0rem;
+ margin-top: 0.5rem;
+}
+.form1{
+ width:52rem;
+ display: inline-block;
+ float: right;
+ position:relative;
+ padding-bottom: 20rem;
+ padding-top: 1rem;
+ padding-bottom: 5rem;
+ display: flex;
+ justify-content: center;
+ margin-top: -500px;
+ margin-right: 500px;
+
+}
+
+.form{
+ display: flex;
+ align-content: center;
+ gap: 1rem;
+ padding-bottom: 1.5rem;
+}
+
+input{
+ color: var(--navBar-color);
+ border: 0.2rem solid var(--navBar-color);
+ padding-left:10px;
+ font-size: 1.8rem;
+ border-radius: 3%;
+ width: 60rem;
+ height: 5rem;
+}
+
+
+.footer{
+ padding: 2rem;
+ background-color: var(--navBar-color);
+}
+
+.text-f{
+ font-size: 1.3rem;
+ color: var(--navBarText-color);
+}
+.linked{
+ text-decoration: none;
+ padding-left: 0rem;
+ background-color: white;
+ text-align: center;
+ color: #2E9AFE;
+
+}
+.btn2{
+ background-color: var(--navBarText-color);
+ border: 1;
+ padding-top: 1.5rem;
+ padding-bottom: 2rem!important;
+ padding-left: 2.1rem;
+ padding-right: 2.1rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 2rem;
+ font-weight: bold;
+ width: 10em;
+ margin-left:150px;
+ margin-top: 3rem;
+ height: 5.5rem;
+}
+.div{
+ display: flex;
+ align-items: center;
+ padding-left: 6rem;
+
+}
+.footer{
+  padding: 3rem;
+}
+.linked{
+  float: right;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.text-ref2{
+  font-size: 3rem;
+}
+strong{
+  float: right;
+}
+
+}
+
+@media (min-width: 835px) and (max-width:999px){
+  /*nav bar*/
+
+  body{
+    overflow: hidden;
+  }
+  .navbar{
+   background-color: var(--navBar-color);
+   height: 100%;
+   width: 100%;
+}
+.img-nav{
+ float: left;
+ padding-top: 3rem;
+ width: 10rem;
+ margin:0px;
+
+}
+.texto-nav{
+ float:right;
+ padding-left: 1rem;
+ padding-top:4.5rem;
+ font-size: 6rem;
+ color: var(--navBarText-color);
+
+}
+.subtitulo-nav{
+ padding:0.5rem;
+ font-size: 2.3rem;
+ color: var(--navBarText-color);
+
+}
+.image-logo{
+ margin:0px;
+ display: inline-block;
+ padding-bottom: 0px;
+
+}
+/*fim navbar*/
+
+
+/*conteudo1*/
+.first-content{
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ width: 50rem;
+
+
+}
+.simbol-name{
+   display: inline-block;
+}
+.img-simbol{
+ float: left;
+ width: 10rem;
+}
+.IMOBI{
+ float: right;
+ padding: 2rem;
+ font-size: 5rem;
+
+}
+
+
+.divisor{
+ border: none;
+ background-color: var(--sideBar-color);
+   padding-top: 0rem;
+   display: flex;
+   justify-content: center;
+   width: 50rem;
+
+}
+  .divisor-son{
+    width: 20rem;
+  }
+
+/*conteudo2*/
+.second-content{
+ width: 50rem;
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+
+}
+.second-content-text{
+ font-size: 5rem;
+ text-align: center;
+}
+.formato{
+ font-size:3rem;
+ text-align: center;
+}
+
+/*botao logar*/
+.login-button{
+ background-color: var(--sideBar-color);
+ padding-top: 0px;
+ display: flex;
+ justify-content: center;
+ padding-bottom: 5rem;
+ width: 50rem;
+ padding-bottom: 3rem;
+
+}
+.btn{
+ background-color: var(--navBarText-color);
+ border: none;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ padding-left: 3rem;
+ padding-right: 3rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+
+
+/*sessão formulário*/
+.img-form{
+ width: 3.0rem;
+ height: 3.5rem;
+ margin-left: 5rem;
+ margin-top: 0.5rem;
+}
+.form1{
+ width:52rem;
+ display: inline-block;
+ float: right;
+ position:relative;
+ padding-bottom: 20rem;
+ padding-top: 1rem;
+ padding-bottom: 5rem;
+ display: flex;
+ justify-content: center;
+ margin-top: -500px;
+ margin-right:-100px;
+
+}
+
+.form{
+ display: flex;
+ align-content: center;
+ gap: 1rem;
+ padding-bottom: 1.5rem;
+}
+
+input{
+ color: var(--navBar-color);
+ border: 0.2rem solid var(--navBar-color);
+ padding-left:10px;
+ font-size: 1.8rem;
+ border-radius: 3%;
+ width: 20rem;
+ height: 4rem;
+}
+
+
+.footer{
+ padding: 2rem;
+ background-color: var(--navBar-color);
+}
+
+.text-f{
+ font-size: 1.3rem;
+ color: var(--navBarText-color);
+}
+.linked{
+ text-decoration: none;
+ padding-left: 0rem;
+ background-color: white;
+ text-align: center;
+ color: #2E9AFE;
+
+}
+.btn2{
+ background-color: var(--navBarText-color);
+ border: 1;
+ padding-top: 1.5rem;
+ padding-bottom: 2rem!important;
+ padding-left: 2.1rem;
+ padding-right: 2.1rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 2rem;
+ font-weight: bold;
+ width: 10em;
+ margin-left:30px;
+ margin-top: 3rem;
+ height: 5.5rem;
+}
+.div{
+ display: flex;
+ align-items: center;
+ padding-left: 6rem;
+
+}
+.footer{
+  padding: 3rem;
+}
+.linked{
+  float: right;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.text-ref2{
+  font-size: 3rem;
+}
+strong{
+  float: right;
+}
+
+}
+
+  @media (min-width: 1301px) and (max-width:1506px){
+    /*nav bar*/
+
+    body{
+      overflow: hidden;
+    }
+    .navbar{
+     background-color: var(--navBar-color);
+     height: 100%;
+     width: 100%;
+  }
+  .img-nav{
+   float: left;
+   padding-top: 3rem;
+   width: 10rem;
+   margin:0px;
+
+  }
+  .texto-nav{
+   float:right;
+   padding-left: 1rem;
+   padding-top:4.5rem;
+   font-size: 6rem;
+   color: var(--navBarText-color);
+
+  }
+  .subtitulo-nav{
+   padding:0.5rem;
+   font-size: 2.3rem;
+   color: var(--navBarText-color);
+
+  }
+  .image-logo{
+   margin:0px;
+   display: inline-block;
+   padding-bottom: 0px;
+
+  }
+  /*fim navbar*/
+
+
+  /*conteudo1*/
+  .first-content{
+   background-color: var(--sideBar-color);
+   color: var(--navBarText-color);
+   display: flex;
+   justify-content: center;
+   padding-top: 5rem;
+   width: 50rem;
+
+
+  }
+  .simbol-name{
+     display: inline-block;
+  }
+  .img-simbol{
+   float: left;
+   width: 10rem;
+  }
+  .IMOBI{
+   float: right;
+   padding: 2rem;
+   font-size: 5rem;
+
+  }
+
+
+  .divisor{
+   border: none;
+   background-color: var(--sideBar-color);
+     padding-top: 0rem;
+     display: flex;
+     justify-content: center;
+     width: 50rem;
+
+  }
+    .divisor-son{
+      width: 20rem;
+    }
+
+  /*conteudo2*/
+  .second-content{
+   width: 50rem;
+   background-color: var(--sideBar-color);
+   color: var(--navBarText-color);
+   display: flex;
+   justify-content: center;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+
+  }
+  .second-content-text{
+   font-size: 5rem;
+   text-align: center;
+  }
+  .formato{
+   font-size:3rem;
+   text-align: center;
+  }
+
+  /*botao logar*/
+  .login-button{
+   background-color: var(--sideBar-color);
+   padding-top: 0px;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 5rem;
+   width: 50rem;
+   padding-bottom: 3rem;
+
+  }
+  .btn{
+   background-color: var(--navBarText-color);
+   border: none;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   border-radius: 10%;
+   color: var(--navBar-color);
+   font-size: 1.8rem;
+   font-weight: bold;
+  }
+
+
+  /*sessão formulário*/
+  .img-form{
+   width: 3.0rem;
+   height: 3.5rem;
+   margin-left: 5rem;
+   margin-top: 0.5rem;
+  }
+  .form1{
+   width:52rem;
+   display: inline-block;
+   float: right;
+   position:relative;
+   padding-bottom: 20rem;
+   padding-top: 1rem;
+   padding-bottom: 5rem;
+   display: flex;
+   justify-content: center;
+   margin-top: -500px;
+   margin-right:280px;
+
+  }
+
+  .form{
+   display: flex;
+   align-content: center;
+   gap: 1rem;
+   padding-bottom: 1.5rem;
+  }
+
+  input{
+   color: var(--navBar-color);
+   border: 0.2rem solid var(--navBar-color);
+   padding-left:10px;
+   font-size: 1.8rem;
+   border-radius: 3%;
+   width: 50rem;
+   height: 4rem;
+  }
+
+
+  .footer{
+   padding: 2rem;
+   background-color: var(--navBar-color);
+  }
+
+  .text-f{
+   font-size: 1.3rem;
+   color: var(--navBarText-color);
+  }
+  .linked{
+   text-decoration: none;
+   padding-left: 0rem;
+   background-color: white;
+   text-align: center;
+   color: #2E9AFE;
+
+  }
+  .btn2{
+   background-color: var(--navBarText-color);
+   border: 1;
+   padding-top: 1.5rem;
+   padding-bottom: 2rem!important;
+   padding-left: 2.1rem;
+   padding-right: 2.1rem;
+   border-radius: 10%;
+   color: var(--navBar-color);
+   font-size: 2rem;
+   font-weight: bold;
+   width: 10em;
+   margin-left:180px;
+   margin-top: 3rem;
+   height: 5.5rem;
+  }
+  .div{
+   display: flex;
+   align-items: center;
+   padding-left: 6rem;
+
+  }
+  .footer{
+    padding: 3rem;
+  }
+  .linked{
+    float: right;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  .text-ref2{
+    font-size: 3rem;
+  }
+  strong{
+    float: right;
+  }
+}
+
+@media (min-width: 1507px) and (max-width:1699px){
+  /*nav bar*/
+
+  body{
+    overflow: hidden;
+  }
+  .navbar{
+   background-color: var(--navBar-color);
+   height: 100%;
+   width: 100%;
+}
+.img-nav{
+ float: left;
+ padding-top: 3rem;
+ width: 10rem;
+ margin:0px;
+
+}
+.texto-nav{
+ float:right;
+ padding-left: 1rem;
+ padding-top:4.5rem;
+ font-size: 6rem;
+ color: var(--navBarText-color);
+
+}
+.subtitulo-nav{
+ padding:0.5rem;
+ font-size: 2.3rem;
+ color: var(--navBarText-color);
+
+}
+.image-logo{
+ margin:0px;
+ display: inline-block;
+ padding-bottom: 0px;
+
+}
+/*fim navbar*/
+
+
+/*conteudo1*/
+.first-content{
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ width: 50rem;
+
+
+}
+.simbol-name{
+   display: inline-block;
+}
+.img-simbol{
+ float: left;
+ width: 10rem;
+}
+.IMOBI{
+ float: right;
+ padding: 2rem;
+ font-size: 5rem;
+
+}
+
+
+.divisor{
+ border: none;
+ background-color: var(--sideBar-color);
+   padding-top: 0rem;
+   display: flex;
+   justify-content: center;
+   width: 50rem;
+
+}
+  .divisor-son{
+    width: 20rem;
+  }
+
+/*conteudo2*/
+.second-content{
+ width: 50rem;
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+
+}
+.second-content-text{
+ font-size: 5rem;
+ text-align: center;
+}
+.formato{
+ font-size:3rem;
+ text-align: center;
+}
+
+/*botao logar*/
+.login-button{
+ background-color: var(--sideBar-color);
+ padding-top: 0px;
+ display: flex;
+ justify-content: center;
+ padding-bottom: 5rem;
+ width: 50rem;
+ padding-bottom: 3rem;
+
+}
+.btn{
+ background-color: var(--navBarText-color);
+ border: none;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ padding-left: 3rem;
+ padding-right: 3rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+
+
+/*sessão formulário*/
+.img-form{
+ width: 3.0rem;
+ height: 3.5rem;
+ margin-left: 5rem;
+ margin-top: 0.5rem;
+}
+.form1{
+ width:52rem;
+ display: inline-block;
+ float: right;
+ position:relative;
+ padding-bottom: 20rem;
+ padding-top: 1rem;
+ padding-bottom: 5rem;
+ display: flex;
+ justify-content: center;
+ margin-top: -500px;
+ margin-right:500px;
+
+}
+
+.form{
+ display: flex;
+ align-content: center;
+ gap: 1rem;
+ padding-bottom: 1.5rem;
+}
+
+input{
+ color: var(--navBar-color);
+ border: 0.2rem solid var(--navBar-color);
+ padding-left:10px;
+ font-size: 1.8rem;
+ border-radius: 3%;
+ width: 50rem;
+ height: 4rem;
+}
+
+
+.footer{
+ padding: 2rem;
+ background-color: var(--navBar-color);
+}
+
+.text-f{
+ font-size: 1.3rem;
+ color: var(--navBarText-color);
+}
+.linked{
+ text-decoration: none;
+ padding-left: 0rem;
+ background-color: white;
+ text-align: center;
+ color: #2E9AFE;
+
+}
+.btn2{
+ background-color: var(--navBarText-color);
+ border: 1;
+ padding-top: 1.5rem;
+ padding-bottom: 2rem!important;
+ padding-left: 2.1rem;
+ padding-right: 2.1rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 2rem;
+ font-weight: bold;
+ width: 10em;
+ margin-left:180px;
+ margin-top: 3rem;
+ height: 5.5rem;
+}
+.div{
+ display: flex;
+ align-items: center;
+ padding-left: 6rem;
+
+}
+.footer{
+  padding: 3rem;
+}
+.linked{
+  float: right;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.text-ref2{
+  font-size: 3rem;
+}
+strong{
+  float: right;
+}
+}
+
+
+@media (min-width: 1000px) and (max-width: 1100px){
+  /*nav bar*/
+
+
+  .navbar{
+   background-color: var(--navBar-color);
+   height: 100%;
+   width: 100%;
+}
+.img-nav{
+ float: left;
+ padding-top: 3rem;
+ width: 10rem;
+ margin:0px;
+
+}
+.texto-nav{
+ float:right;
+ padding-left: 1rem;
+ padding-top:4.5rem;
+ font-size: 6rem;
+ color: var(--navBarText-color);
+
+}
+.subtitulo-nav{
+ padding:0.5rem;
+ font-size: 2.3rem;
+ color: var(--navBarText-color);
+
+}
+.image-logo{
+ margin:0px;
+ display: inline-block;
+ padding-bottom: 0px;
+
+}
+/*fim navbar*/
+
+
+/*conteudo1*/
+.first-content{
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ width: 50rem;
+
+
+}
+.simbol-name{
+   display: inline-block;
+}
+.img-simbol{
+ float: left;
+ width: 10rem;
+}
+.IMOBI{
+ float: right;
+ padding: 2rem;
+ font-size: 5rem;
+
+}
+
+
+.divisor{
+ border: none;
+ background-color: var(--sideBar-color);
+   padding-top: 0rem;
+   display: flex;
+   justify-content: center;
+   width: 50rem;
+
+}
+  .divisor-son{
+    width: 20rem;
+  }
+
+/*conteudo2*/
+.second-content{
+ width: 50rem;
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+
+}
+.second-content-text{
+ font-size: 5rem;
+ text-align: center;
+}
+.formato{
+ font-size:3rem;
+ text-align: center;
+}
+
+/*botao logar*/
+.login-button{
+ background-color: var(--sideBar-color);
+ padding-top: 0px;
+ display: flex;
+ justify-content: center;
+ padding-bottom: 5rem;
+ width: 50rem;
+ padding-bottom: 3rem;
+
+}
+.btn{
+ background-color: var(--navBarText-color);
+ border: none;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ padding-left: 3rem;
+ padding-right: 3rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+
+
+/*sessão formulário*/
+.img-form{
+ width: 2.8rem;
+ height: 3.3rem;
+ margin-left: 5rem;
+ margin-top: 0.5rem;
+}
+.form1{
+ width:52rem;
+ display: inline-block;
+ float: right;
+ position:relative;
+ padding-bottom: 20rem;
+ padding-top: 1rem;
+ padding-bottom: 5rem;
+ display: flex;
+ justify-content: center;
+ margin-top: -500px;
+ margin-right:-10px;
+
+}
+
+.form{
+ display: flex;
+ align-content: center;
+ gap: 1rem;
+ padding-bottom: 1.5rem;
+}
+
+input{
+ color: var(--navBar-color);
+ border: 0.2rem solid var(--navBar-color);
+ padding-left:10px;
+ font-size: 1.5rem;
+ border-radius: 3%;
+ width: 30rem;
+ height: 3.8rem;
+}
+
+
+.footer{
+ padding: 2rem;
+ background-color: var(--navBar-color);
+}
+
+.text-f{
+ font-size: 1.3rem;
+ color: var(--navBarText-color);
+}
+.linked{
+ text-decoration: none;
+ padding-left: 0rem;
+ background-color: white;
+ text-align: center;
+ color: #2E9AFE;
+
+}
+.btn2{
+ background-color: var(--navBarText-color);
+ border: 1;
+ padding-top: 1.5rem;
+ padding-bottom: 2rem!important;
+ padding-left: 1.5rem;
+ padding-right: 2.1rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 2rem;
+ font-weight: bold;
+ width: 8em;
+ margin-left:90px;
+ margin-top: 3rem;
+ height: 5.5rem;
+}
+.div{
+ display: flex;
+ align-items: center;
+ padding-left: 6rem;
+
+}
+.footer{
+  padding: 3rem;
+  height: 8rem;
+  padding-bottom: 3rem;
+}
+.linked{
+  float: right;
+  font-size: 2rem;
+  padding-bottom: 0rem;
+}
+.text-ref2{
+  font-size: 3rem;
+}
+strong{
+  float: right;
+}
+}
+
+@media (min-width: 1101px) and (max-width: 1301px){
+  /*nav bar*/
+
+
+  .navbar{
+   background-color: var(--navBar-color);
+   height: 100%;
+   width: 100%;
+}
+.img-nav{
+ float: left;
+ padding-top: 3rem;
+ width: 10rem;
+ margin:0px;
+
+}
+.texto-nav{
+ float:right;
+ padding-left: 1rem;
+ padding-top:4.5rem;
+ font-size: 6rem;
+ color: var(--navBarText-color);
+
+}
+.subtitulo-nav{
+ padding:0.5rem;
+ font-size: 2.3rem;
+ color: var(--navBarText-color);
+
+}
+.image-logo{
+ margin:0px;
+ display: inline-block;
+ padding-bottom: 0px;
+
+}
+/*fim navbar*/
+
+
+/*conteudo1*/
+.first-content{
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ width: 50rem;
+
+
+}
+.simbol-name{
+   display: inline-block;
+}
+.img-simbol{
+ float: left;
+ width: 10rem;
+}
+.IMOBI{
+ float: right;
+ padding: 2rem;
+ font-size: 5rem;
+
+}
+
+
+.divisor{
+ border: none;
+ background-color: var(--sideBar-color);
+   padding-top: 0rem;
+   display: flex;
+   justify-content: center;
+   width: 50rem;
+
+}
+  .divisor-son{
+    width: 20rem;
+  }
+
+/*conteudo2*/
+.second-content{
+ width: 50rem;
+ background-color: var(--sideBar-color);
+ color: var(--navBarText-color);
+ display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+
+}
+.second-content-text{
+ font-size: 5rem;
+ text-align: center;
+}
+.formato{
+ font-size:3rem;
+ text-align: center;
+}
+
+/*botao logar*/
+.login-button{
+ background-color: var(--sideBar-color);
+ padding-top: 0px;
+ display: flex;
+ justify-content: center;
+ padding-bottom: 5rem;
+ width: 50rem;
+ padding-bottom: 3rem;
+
+}
+.btn{
+ background-color: var(--navBarText-color);
+ border: none;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ padding-left: 3rem;
+ padding-right: 3rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+
+
+/*sessão formulário*/
+.img-form{
+ width: 2.8rem;
+ height: 3.3rem;
+ margin-left: 5rem;
+ margin-top: 0.5rem;
+}
+.form1{
+ width:52rem;
+ display: inline-block;
+ float: right;
+ position:relative;
+ padding-bottom: 20rem;
+ padding-top: 1rem;
+ padding-bottom: 5rem;
+ display: flex;
+ justify-content: center;
+ margin-top: -500px;
+ margin-right:120px;
+
+}
+
+.form{
+ display: flex;
+ align-content: center;
+ gap: 1rem;
+ padding-bottom: 1.5rem;
+}
+
+input{
+ color: var(--navBar-color);
+ border: 0.2rem solid var(--navBar-color);
+ padding-left:10px;
+ font-size: 1.5rem;
+ border-radius: 3%;
+ width: 40rem;
+ height: 3.8rem;
+}
+
+
+.footer{
+ padding: 2rem;
+ background-color: var(--navBar-color);
+}
+
+.text-f{
+ font-size: 1.3rem;
+ color: var(--navBarText-color);
+}
+.linked{
+ text-decoration: none;
+ padding-left: 0rem;
+ background-color: white;
+ text-align: center;
+ color: #2E9AFE;
+
+}
+.btn2{
+ background-color: var(--navBarText-color);
+ border: 1;
+ padding-top: 1.5rem;
+ padding-bottom: 2rem!important;
+ padding-left: 1.5rem;
+ padding-right: 2.1rem;
+ border-radius: 10%;
+ color: var(--navBar-color);
+ font-size: 2rem;
+ font-weight: bold;
+ width: 8em;
+ margin-left:140px;
+ margin-top: 3rem;
+ height: 5.5rem;
+}
+.div{
+ display: flex;
+ align-items: center;
+ padding-left: 6rem;
+
+}
+.footer{
+  padding: 3rem;
+  height: 8rem;
+  padding-bottom: 3rem;
+}
+.linked{
+  float: right;
+  font-size: 2rem;
+  padding-bottom: 0rem;
+}
+.text-ref2{
+  font-size: 3rem;
+}
+strong{
+  float: right;
+}
+}

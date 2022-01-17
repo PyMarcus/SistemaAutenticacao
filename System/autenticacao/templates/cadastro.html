@@ -1,0 +1,97 @@
+<!--Para rodar htmls no django, já pré-definidos, pode-se usar:-->
+{% extends 'base.html' %}  <!--Ou seja, busca em base html o template-->
+{% load static %} <!--Carrega o css-->
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static '/css/cadastro.css' %}">
+{% endblock %}
+
+
+{% block 'titulo' %}
+Cadastro
+{% endblock %}
+
+{% block 'body' %}  <!--Adiciona dentro do body-->
+
+  <!--inicio topo-->
+            <header>
+                    <!--início nav-bar-->
+                    <nav class="navbar">
+                          <!--Logo-->
+                          <div class="image-logo">
+                                <!--Imagem do logo-->
+                                     <img class="img-nav" src="{% static '/img/logo.png' %}" >
+                                <!--LOGO-->
+                                     <h1 class="texto-nav">IMOBI</h1>
+                          </div>
+                          <!--fim do logo-->
+                          <h2 class="subtitulo-nav">A sua imobiliária</h2>
+                    </nav>
+                    <!--Fim nav-bar-->
+            </header>
+            <!--Fim do topo-->
+
+
+            <!--inicio conteúdo-->
+            <section class="first-content">
+                      <div class="simbol-name">
+                            <!--imagem do logo novamente-->
+                            <img class="img-simbol" src="{% static '/img/logo.png' %}" alt="logo2">
+                            <!--Titulo empresa novamente-->
+                            <p class="IMOBI">IMOBI</p>
+                      </div>
+            </section>
+
+            <section class="second-content">
+                      <p class="second-content-text">
+                        Cadastre-se!
+                      </p>
+            </section>
+            <div class="divisor">
+              <hr class="divisor-son">
+            </div>
+
+
+            <section class="second-content">
+                    <p class="formato">As melhores casas<br> nos melhores preços!</p>
+                    <br>
+            </section>
+            <!--Fim do conteúdo textual-->
+
+            <div class="login-button">
+                  <button class="btn"><a href="">LOGAR</a></button>
+            </div>
+
+            <section class="form1">
+                      <form method="POST" action="{% url 'cadastro' %}">{% csrf_token %}
+                            <div class="form">
+                                  <img  class="img-form" src="{% static '/img/user.png' %}">
+                                  <input name="username" type="text" alt="input nome" placeholder="nome">
+                            </div>
+
+
+                            <div class="form">
+                                  <img class="img-form" src="{% static '/img/email.png' %}">
+                                  <input name="email" type="text" alt="input nome" placeholder="e-mail">
+                            </div>
+
+
+                            <div class="form">
+                                  <img class="img-form" src="{% static '/img/senha.png' %}">
+                                  <input name="senha" type="password" alt="input nome" placeholder="senha">
+                            </div>
+
+                            <div class="div">
+                              <input type="submit" class="btn2" value="CADASTRAR">
+                            </div>
+
+                      </form>
+            </section>
+
+
+            <footer class="footer">
+              <h5 class="text-f"><strong class="text-f2">Contato:</strong>
+                <br>
+                  <a class="linked" href="https://www.linkedin.com/in/marcus-vin%C3%ADcius-3a6799214/">LinkedIn</a></h5>
+            </footer>
+{% endblock %}
